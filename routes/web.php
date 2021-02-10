@@ -14,6 +14,18 @@ Route::get('/comment/create', function () {
 
 Route::post('/comment/store', function (Request $request) {
 
+    if (! $request->has('spam')) {
+        abort(422, 'Spam Detected'); // I understand what you're doing but i ain't gonna do it.
+    }
+
+    if (! empty($request['spam'])) {
+        abort(422, 'Spam Detected');
+    }
+
+    if ((microtime(true) - $request['time']) <= 3) {
+        abort(422, 'Spam Detected');
+    }
+
     Comment::create(
         $request->validate([
             'title' => 'required',

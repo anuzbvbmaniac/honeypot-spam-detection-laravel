@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34d64011-21a8-4b37-a4bd-a0eacb0a8446" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/honeypot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/honeypot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/comment/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comment/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +17,13 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Laravel Blade" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,6 +151,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1oG4FJEnBa3gglqzuSCr3TySzwC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -173,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612899492797</updated>
       <workItem from="1612899496186" duration="42000" />
-      <workItem from="1612954396596" duration="4005000" />
+      <workItem from="1612954396596" duration="5242000" />
     </task>
     <servers />
   </component>

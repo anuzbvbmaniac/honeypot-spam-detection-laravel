@@ -24,12 +24,14 @@
                         @csrf
                         <div class="my-5 text-sm">
                             <label for="title" class="block text-black">Title</label>
-                            <input type="text" autofocus id="title" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Title" name="title"/>
+                            <input type="text" autofocus id="title" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Title" name="title" />
                         </div>
                         <div class="my-5 text-sm">
                             <label for="comment" class="block text-black">Comment</label>
-                            <input type="text" id="comment" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Comment" name="comment"/>
+                            <input type="text" id="comment" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Comment" name="comment" />
                         </div>
+
+                        <x-honeypot />
 
                         <button class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Comment</button>
                     </form>
