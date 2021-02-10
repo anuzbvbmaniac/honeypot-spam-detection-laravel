@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\Honeypot;
 use App\Models\Models\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -14,18 +15,6 @@ Route::get('/comment/create', function () {
 
 Route::post('/comment/store', function (Request $request) {
 
-    if (! $request->has('spam')) {
-        abort(422, 'Spam Detected'); // I understand what you're doing but i ain't gonna do it.
-    }
-
-    if (! empty($request['spam'])) {
-        abort(422, 'Spam Detected');
-    }
-
-    if ((microtime(true) - $request['time']) <= 3) {
-        abort(422, 'Spam Detected');
-    }
-
     Comment::create(
         $request->validate([
             'title' => 'required',
@@ -35,7 +24,7 @@ Route::post('/comment/store', function (Request $request) {
 
     return back()->with('success', 'Published');
 
-})->middleware(['auth'])->name('comment.store');
+})->middleware(['auth', Honeypot::class])->name('comment.store');
 
 Route::get('/comment/{id}/delete/', function ($id) {
 
@@ -47,6 +36,7 @@ Route::get('/comment/{id}/delete/', function ($id) {
 
 Route::get('/dashboard', function () {
     $comments = Comment::all();
+
     return view('dashboard', compact('comments'));
 })->middleware(['auth'])->name('dashboard');
 
