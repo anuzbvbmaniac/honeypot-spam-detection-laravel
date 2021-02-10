@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace App\Services\Honeypot;
 
 use Closure;
 use Crypt;
 use Illuminate\Contracts\Encryption\DecryptException;
-use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Http\Request;
 
 class Honeypot
@@ -14,7 +13,7 @@ class Honeypot
     public function handle(Request $request, Closure $next)
     {
 
-        if (! config('honeypot.enabled')) {
+        if (!config('honeypot.enabled')) {
             return $next($request);
         }
 

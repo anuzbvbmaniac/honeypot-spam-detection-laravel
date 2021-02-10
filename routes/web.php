@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Middleware\Honeypot;
 use App\Models\Models\Comment;
+use App\Services\Honeypot\Honeypot;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

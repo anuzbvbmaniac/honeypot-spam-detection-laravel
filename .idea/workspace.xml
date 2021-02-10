@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="34d64011-21a8-4b37-a4bd-a0eacb0a8446" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/honeypot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/honeypot.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Honeypot.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Honeypot/Honeypot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Honeypot.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/honeypot.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Honeypot/config/honeypot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +38,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="HoneyPot" pattern="file[honeypot]:app/Services/Honeypot//*" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -162,8 +168,19 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Honeypot" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\honeypot\app\Services\Honeypot" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\honeypot\app\Services\Honeypot\config" />
+      <recent name="C:\xampp\htdocs\honeypot\app\Services\Honeypot" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -180,11 +197,22 @@
       <option name="presentableId" value="Default" />
       <updated>1612899492797</updated>
       <workItem from="1612899496186" duration="42000" />
-      <workItem from="1612954396596" duration="8921000" />
+      <workItem from="1612954396596" duration="9985000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
