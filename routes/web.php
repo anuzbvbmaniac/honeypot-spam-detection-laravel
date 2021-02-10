@@ -1,7 +1,7 @@
 <?php
 
+use App\Honeypot\BlockSpam;
 use App\Models\Models\Comment;
-use App\Services\Honeypot\Honeypot;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,7 +24,7 @@ Route::post('/comment/store', function (Request $request) {
 
     return back()->with('success', 'Published');
 
-})->middleware(['auth', Honeypot::class])->name('comment.store');
+})->middleware(['auth', BlockSpam::class])->name('comment.store');
 
 Route::get('/comment/{id}/delete/', function ($id) {
 

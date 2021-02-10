@@ -1,6 +1,6 @@
 <?php
 
-use App\Services\Honeypot\HoneypotServiceProvider;
+use App\Honeypot\HoneypotServiceProvider;
 
 return [
 

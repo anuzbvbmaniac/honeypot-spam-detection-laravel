@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Honeypot\View\Components;
+namespace App\Honeypot\View\Components;
 
 use Illuminate\View\Component;
 
