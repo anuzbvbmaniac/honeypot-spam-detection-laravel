@@ -31,6 +31,8 @@
                             <input type="text" id="comment" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" placeholder="Comment" name="comment" />
                         </div>
 
+                        <x-honeypot />
+
                         <button class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Comment</button>
                     </form>
 
